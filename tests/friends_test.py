@@ -64,14 +64,14 @@ class TestFriends(unittest.TestCase):
 
 
   # 1. For a given person, return their name
-  @unittest.skip("delete this line to run the test")  
+#  @unittest.skip("delete this line to run the test")  
   def test_getting_name(self):
     result = get_name(self.person5)
     self.assertEqual("Daphne", result)
 
   # 2. For a given person, return their favourite tv show
   # (e.g. the function favourite_tv_show(self.person2) should return the string "Baywatch")
-  @unittest.skip("delete this line to run the test")  
+#  @unittest.skip("delete this line to run the test")  
   def test_get_favourite_tv_show(self):
     result = get_favourite_tv_show(self.person2)
     self.assertEqual("Baywatch", result)
@@ -79,11 +79,11 @@ class TestFriends(unittest.TestCase):
 
   # 3. For a given person, check if they like a particular food
   # (e.g. the function likes_to_eat(self.person2, "bread") should return True, likes_to_eat(self.person3, "spinach") should return False)
-  @unittest.skip("delete this line to run the test")
+#  @unittest.skip("delete this line to run the test")
   def test_person_likes_food__True(self):
     self.assertEqual(True, likes_to_eat(self.person2, "bread"))
 
-  @unittest.skip("delete this line to run the test")
+#  @unittest.skip("delete this line to run the test")
   def test_person_likes_food__False(self):
     self.assertEqual(False, likes_to_eat(self.person3, "spinach"))
 
