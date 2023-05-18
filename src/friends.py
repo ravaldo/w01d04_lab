@@ -23,10 +23,11 @@ def lend_money(p1, p2, amount):
 		p2["monies"] += amount
 
 def all_favourite_foods(people):
-	allfavs = []
-	for person in people:
-		allfavs.extend(person["favourites"]["snacks"])
-	return allfavs
+#	allfavs = []
+#	for person in people:
+#		allfavs.extend(person["favourites"]["snacks"])
+#	return allfavs
+	return [snacks for p in people for snacks in p["favourites"]["snacks"]]	
 
 def find_no_friends(people):
 	return [p for p in people if len(p["friends"]) == 0]
